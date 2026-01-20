@@ -18,6 +18,14 @@
     },
     "balance": "Balance"
   },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "connecting": "Connecting...",
+    "disconnect": "Disconnect",
+    "connectionFailed": "Failed to connect wallet. Please try again.",
+    "connected": "Wallet connected",
+    "balance": "Balance"
+  },
   "markets": {
     "title": "Prediction Markets",
     "description": "Explore and bet on the outcome of various events",

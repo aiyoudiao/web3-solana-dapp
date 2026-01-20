@@ -18,6 +18,14 @@
     },
     "balance": "余额"
   },
+  "wallet": {
+    "connect": "连接钱包",
+    "connecting": "连接中...",
+    "disconnect": "断开连接",
+    "connectionFailed": "连接钱包失败，请重试。",
+    "connected": "钱包已连接",
+    "balance": "余额"
+  },
   "markets": {
     "title": "预测市场",
     "description": "探索并对各种事件的结果进行投注",

@@ -4,6 +4,7 @@ import { useAppStore } from '../stores'
 import { useThemeStore } from '../stores/themeStore'
 import { useTranslation } from 'react-i18next'
 import i18n from '../i18n'
+import WalletConnectButton from './WalletConnectButton'
 
 const Header: React.FC = () => {
   const navigate = useNavigate()
@@ -108,6 +109,9 @@ const Header: React.FC = () => {
               </button>
             </div>
           </div>
+          
+          {/* Wallet Connect Button */}
+          <WalletConnectButton />
           
           {user && (
             <div className="flex items-center gap-2">
