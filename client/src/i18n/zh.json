@@ -1,0 +1,116 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "retry": "重试",
+    "back": "返回",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "success": "成功",
+    "failure": "失败"
+  },
+  "header": {
+    "title": "预测市场",
+    "nav": {
+      "markets": "市场",
+      "create": "创建市场"
+    },
+    "balance": "余额"
+  },
+  "markets": {
+    "title": "预测市场",
+    "description": "探索并对各种事件的结果进行投注",
+    "subtitle": "探索并对各种事件的结果进行投注",
+    "search": "搜索市场...",
+    "filters": {
+      "all": "全部",
+      "active": "进行中",
+      "pending": "待开始",
+      "resolved": "已结算"
+    },
+    "noResults": "未找到市场",
+    "noResultsHint": "尝试调整搜索条件或筛选器",
+    "loading": "正在加载市场...",
+    "noMoreMarkets": "没有更多市场可加载"
+  },
+  "marketCard": {
+    "ends": "结束时间",
+    "yesPool": "支持池",
+    "noPool": "反对池",
+    "totalPool": "总奖池",
+    "odds": "赔率",
+    "status": {
+      "pending": "待开始",
+      "active": "进行中",
+      "resolved": "已结算"
+    },
+    "result": "结果"
+  },
+  "marketDetail": {
+    "backToMarkets": "返回市场列表",
+    "placeBet": "进行投注",
+    "marketResults": "市场结果",
+    "chooseSide": "选择方向",
+    "amount": "金额 (USD)",
+    "potentialReward": "潜在奖励",
+    "balance": "余额",
+    "placingBet": "正在投注...",
+    "placeBetAction": "确认投注",
+    "marketNotActive": "市场尚未开始",
+    "marketNotActiveHint": "市场激活后即可开始投注。",
+    "marketResolved": "市场已结算",
+    "marketResolvedHint": "该市场已完成结算。",
+    "youWon": "恭喜！您赢了！",
+    "youLost": "很遗憾，您没有赢。",
+    "noBet": "您未在此市场投注。",
+    "claimReward": "领取奖励",
+    "claimingReward": "领取中...",
+    "claimedReward": "成功领取奖励 {{amount}}",
+    "placedBet": "成功投注 {{amount}} 支持 {{side}}",
+    "insufficientBalance": "余额不足",
+    "marketClosed": "市场已关闭投注",
+    "yourBet": "您的投注"
+  },
+  "createMarket": {
+    "title": "创建预测市场",
+    "subtitle": "创建您自己的预测市场，让其他人对结果进行投注",
+    "form": {
+      "title": "标题 *",
+      "titlePlaceholder": "例如：比特币会在2024年底前达到10万美元吗？",
+      "description": "描述 *",
+      "descriptionPlaceholder": "描述这个预测市场的条件...",
+      "endTime": "结束时间 *",
+      "endTimeHint": "市场将在此时间关闭投注",
+      "yesPool": "初始支持池 (可选)",
+      "noPool": "初始反对池 (可选)",
+      "yourBalance": "您的余额",
+      "creating": "创建市场中...",
+      "create": "创建市场",
+      "success": "市场创建成功！正在跳转...",
+      "errors": {
+        "titleRequired": "标题不能为空",
+        "titleTooLong": "标题不能超过100个字符",
+        "descriptionRequired": "描述不能为空",
+        "descriptionTooLong": "描述不能超过500个字符",
+        "endTimeRequired": "结束时间不能为空",
+        "endTimeFuture": "结束时间必须在未来",
+        "invalidNumber": "请输入有效的数字",
+        "insufficientBalance": "初始池余额不足"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 预测市场 DApp",
+    "builtWith": "使用 React、TypeScript 和 Tailwind CSS 构建"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

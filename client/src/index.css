@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 主题颜色变量定义 */
+:root {
+  /* 蓝色科技商务风格（浅色主题） */
+  --blue-primary: #0066CC;
+  --blue-primary-dark: #004C99;
+  --blue-primary-light: #4DA3FF;
+  --blue-secondary: #E6F0FF;
+  --blue-background: #F0F4F8;
+  --blue-text: #1A1A2E;
+  --blue-text-light: #667788;
+  --blue-border: #D1D8E0;
+  --blue-accent: #00D4FF;
+  --blue-glow: rgba(0, 102, 204, 0.1);
+  
+  /* 紫罗兰商务风格（深色主题） */
+  --violet-primary: #9370DB;
+  --violet-primary-dark: #7B68EE;
+  --violet-secondary: #483D8B;
+  --violet-background: #1A1A2E;
+  --violet-text: #E0E0E0;
+  --violet-text-light: #B0B0B0;
+  --violet-border: #6A5ACD;
+  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 浅色主题（蓝色科技风格） */
+.theme-light {
+  --primary: var(--blue-primary);
+  --primary-dark: var(--blue-primary-dark);
+  --primary-light: var(--blue-primary-light);
+  --secondary: var(--blue-secondary);
+  --background: var(--blue-background);
+  --surface: #FFFFFF;
+  --text: var(--blue-text);
+  --text-light: var(--blue-text-light);
+  --border: var(--blue-border);
+  --accent: var(--blue-accent);
+  --glow: var(--blue-glow);
+  
+  color: var(--blue-text);
+  background-color: var(--blue-background);
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 102, 204, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* 深色主题（紫罗兰风格） */
+.theme-dark {
+  --primary: var(--violet-primary);
+  --primary-dark: var(--violet-primary-dark);
+  --secondary: var(--violet-secondary);
+  --background: var(--violet-background);
+  --surface: #16213E;
+  --text: var(--violet-text);
+  --text-light: var(--violet-text-light);
+  --border: var(--violet-border);
+  
+  color: var(--violet-text);
+  background-color: var(--violet-background);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 动画定义 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
+
+/* 全局链接样式 */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}

@@ -1,0 +1,116 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "success": "Success",
+    "failure": "Failure"
+  },
+  "header": {
+    "title": "Prediction Market",
+    "nav": {
+      "markets": "Markets",
+      "create": "Create Market"
+    },
+    "balance": "Balance"
+  },
+  "markets": {
+    "title": "Prediction Markets",
+    "description": "Explore and bet on the outcome of various events",
+    "subtitle": "Explore and bet on the outcome of various events",
+    "search": "Search markets...",
+    "filters": {
+      "all": "All",
+      "active": "Active",
+      "pending": "Pending",
+      "resolved": "Resolved"
+    },
+    "noResults": "No markets found",
+    "noResultsHint": "Try adjusting your search or filter criteria",
+    "loading": "Loading markets...",
+    "noMoreMarkets": "No more markets to load"
+  },
+  "marketCard": {
+    "ends": "Ends",
+    "yesPool": "YES Pool",
+    "noPool": "NO Pool",
+    "totalPool": "Total Pool",
+    "odds": "Odds",
+    "status": {
+      "pending": "Pending",
+      "active": "Active",
+      "resolved": "Resolved"
+    },
+    "result": "Result"
+  },
+  "marketDetail": {
+    "backToMarkets": "Back to Markets",
+    "placeBet": "Place Your Bet",
+    "marketResults": "Market Results",
+    "chooseSide": "Choose Side",
+    "amount": "Amount (USD)",
+    "potentialReward": "Potential Reward",
+    "balance": "Balance",
+    "placingBet": "Placing Bet...",
+    "placeBetAction": "Place Bet",
+    "marketNotActive": "Market Not Active Yet",
+    "marketNotActiveHint": "Betting will open when the market becomes active.",
+    "marketResolved": "Market Resolved",
+    "marketResolvedHint": "This market has been resolved.",
+    "youWon": "Congratulations! You won!",
+    "youLost": "Unfortunately, you did not win.",
+    "noBet": "You did not place a bet on this market.",
+    "claimReward": "Claim Reward",
+    "claimingReward": "Claiming...",
+    "claimedReward": "Successfully claimed reward of {{amount}}",
+    "placedBet": "Successfully bet {{amount}} on {{side}}",
+    "insufficientBalance": "Insufficient balance",
+    "marketClosed": "Market is not active for betting",
+    "yourBet": "Your Bet"
+  },
+  "createMarket": {
+    "title": "Create Prediction Market",
+    "subtitle": "Create your own prediction market and let others bet on the outcome",
+    "form": {
+      "title": "Title *",
+      "titlePlaceholder": "e.g., Will Bitcoin reach $100,000 by end of 2024?",
+      "description": "Description *",
+      "descriptionPlaceholder": "Describe the conditions for this prediction market...",
+      "endTime": "End Time *",
+      "endTimeHint": "Markets will close for betting at this time",
+      "yesPool": "Initial YES Pool (optional)",
+      "noPool": "Initial NO Pool (optional)",
+      "yourBalance": "Your Balance",
+      "creating": "Creating Market...",
+      "create": "Create Market",
+      "success": "Market created successfully! Redirecting...",
+      "errors": {
+        "titleRequired": "Title is required",
+        "titleTooLong": "Title must be less than 100 characters",
+        "descriptionRequired": "Description is required",
+        "descriptionTooLong": "Description must be less than 500 characters",
+        "endTimeRequired": "End time is required",
+        "endTimeFuture": "End time must be in the future",
+        "invalidNumber": "Please enter a valid number",
+        "insufficientBalance": "Insufficient balance for initial pools"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Prediction Market DApp",
+    "builtWith": "Built with React, TypeScript, and Tailwind CSS"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}
