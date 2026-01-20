@@ -4,27 +4,27 @@
 
 /* 主题颜色变量定义 */
 :root {
-  /* 蓝色科技商务风格（浅色主题） */
-  --blue-primary: #0066CC;
-  --blue-primary-dark: #004C99;
-  --blue-primary-light: #4DA3FF;
-  --blue-secondary: #E6F0FF;
-  --blue-background: #F0F4F8;
-  --blue-text: #1A1A2E;
-  --blue-text-light: #667788;
-  --blue-border: #D1D8E0;
-  --blue-accent: #00D4FF;
-  --blue-glow: rgba(0, 102, 204, 0.1);
-  
-  /* 紫罗兰商务风格（深色主题） */
-  --violet-primary: #9370DB;
-  --violet-primary-dark: #7B68EE;
-  --violet-secondary: #483D8B;
-  --violet-background: #1A1A2E;
-  --violet-text: #E0E0E0;
-  --violet-text-light: #B0B0B0;
-  --violet-border: #6A5ACD;
-  
+  /* Vue.js浅色主题 */
+  --blue-primary: #41b883; /* Vue绿色 */
+  --blue-primary-dark: #369f70;
+  --blue-primary-light: #7dd3ac;
+  --blue-secondary: #e8f5f0;
+  --blue-background: #ffffff;
+  --blue-text: #35495e; /* Vue深蓝色 */
+  --blue-text-light: #6c7a89;
+  --blue-border: #41b883;
+  --blue-accent: #41b883;
+  --blue-glow: rgba(65, 184, 131, 0.1);
+
+  /* React深色主题 */
+  --violet-primary: #61dafb; /* React蓝色 */
+  --violet-primary-dark: #4ecdc4;
+  --violet-secondary: #282c34;
+  --violet-background: #20232a; /* React深色背景 */
+  --violet-text: #ffffff;
+  --violet-text-light: #abb2bf;
+  --violet-border: #61dafb;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -34,39 +34,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 浅色主题（蓝色科技风格） */
+/* 浅色主题（Vue.js风格） */
 .theme-light {
   --primary: var(--blue-primary);
   --primary-dark: var(--blue-primary-dark);
   --primary-light: var(--blue-primary-light);
   --secondary: var(--blue-secondary);
   --background: var(--blue-background);
-  --surface: #FFFFFF;
+  --surface: #ffffff;
   --text: var(--blue-text);
   --text-light: var(--blue-text-light);
   --border: var(--blue-border);
   --accent: var(--blue-accent);
   --glow: var(--blue-glow);
-  
+
   color: var(--blue-text);
   background-color: var(--blue-background);
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(0, 102, 204, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+  background-image:
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(65, 184, 131, 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(65, 184, 131, 0.03) 0%,
+      transparent 50%
+    );
   background-attachment: fixed;
 }
 
-/* 深色主题（紫罗兰风格） */
+/* 深色主题（React风格） */
 .theme-dark {
   --primary: var(--violet-primary);
   --primary-dark: var(--violet-primary-dark);
   --secondary: var(--violet-secondary);
   --background: var(--violet-background);
-  --surface: #16213E;
+  --surface: #282c34;
   --text: var(--violet-text);
   --text-light: var(--violet-text-light);
   --border: var(--violet-border);
-  
+
   color: var(--violet-text);
   background-color: var(--violet-background);
 }
@@ -75,7 +83,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* 动画定义 */
